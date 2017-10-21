@@ -8,10 +8,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import static com.leaphawk.nestedpager.R.layout.editor;
 
@@ -38,9 +38,19 @@ public class ChildPagerFragment extends Fragment {
                              Bundle savedInstanceState) {
         View result=inflater.inflate(editor, container, false);
 
-        ViewPager pager=(ViewPager) result.findViewById(R.id.childPager);
+        result.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "child", Toast.LENGTH_LONG);
+            }
+        });
+
+        final ChildPageViewer pager=(ChildPageViewer) result.findViewById(R.id.childPager);
 
         pager.setAdapter(buildAdapter());
+        pager.setPadding(200,200,200,200);
+
+
 
 
         int position=getArguments().getInt(KEY_POSITION, -1);

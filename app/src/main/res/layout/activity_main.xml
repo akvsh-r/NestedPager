@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@color/colorAccent"
     tools:context="com.leaphawk.nestedpager.MainActivity">
 
-   <android.support.v4.view.ViewPager
+   <com.leaphawk.nestedpager.ParentViewPager
        android:id="@+id/pager"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
        tools:layout_editor_absoluteX="8dp"
-       tools:layout_editor_absoluteY="8dp"></android.support.v4.view.ViewPager>
+       tools:layout_editor_absoluteY="8dp" />
 
 </RelativeLayout>
