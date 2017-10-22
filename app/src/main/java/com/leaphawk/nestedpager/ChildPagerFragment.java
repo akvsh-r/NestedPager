@@ -45,12 +45,12 @@ public class ChildPagerFragment extends Fragment {
             }
         });
 
-        final ChildPageViewer pager=(ChildPageViewer) result.findViewById(R.id.childPager);
+        final ChildViewPager pager=(ChildViewPager) result.findViewById(R.id.childPager);
 
-        pager.setPageTransformer(false, new VerticalPageTransformer());
+
         pager.setAdapter(buildAdapter());
 
-        pager.setPadding(20,10,20,10);
+        pager.setPadding(50,50,50,50);
 
 
 

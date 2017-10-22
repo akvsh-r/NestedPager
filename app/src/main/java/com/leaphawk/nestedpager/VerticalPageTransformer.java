@@ -23,3 +23,4 @@ public class VerticalPageTransformer  implements ViewPager.PageTransformer {
         view.setTranslationY(yPosition);
     }
 }
+

@@ -26,7 +26,7 @@ public class ChildAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Log.e("CHILD ADAPTER", "getItem: "+position );
-        return(new ChildFragment());
+        return(new StoryFragment());
     }
 
     @Override

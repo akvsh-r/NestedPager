@@ -1,4 +1,5 @@
-<com.leaphawk.nestedpager.ChildPageViewer xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.leaphawk.nestedpager.ChildViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/childPager"
     android:layout_width="100dp"
     android:layout_height="100dp" />

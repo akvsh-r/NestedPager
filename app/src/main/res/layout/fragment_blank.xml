@@ -10,5 +10,5 @@
     android:text="Child View Pager Fragment"
     android:textAlignment="center"
     android:textColor="@android:color/white"
-    tools:context="com.leaphawk.nestedpager.ChildFragment" />
+    tools:context="com.leaphawk.nestedpager.StoryFragment" />
 

@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ViewPager pager=(ViewPager) findViewById(R.id.pager);
 
+        pager.setPageTransformer(false, new VerticalPageTransformer());
         pager.setAdapter(buildAdapter());
     }
 
