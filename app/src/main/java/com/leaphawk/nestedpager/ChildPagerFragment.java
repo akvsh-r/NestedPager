@@ -50,7 +50,7 @@ public class ChildPagerFragment extends Fragment {
 
         pager.setAdapter(buildAdapter());
 
-        pager.setPadding(50,50,50,50);
+        pager.setPadding(100,200,100,200);
 
 
 
